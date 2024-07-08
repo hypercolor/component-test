@@ -1,0 +1,22 @@
+{
+  "name": "@hypercolor/component-test",
+  "version": "0.0.2",
+  "description": "testing component injection via npm",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build --clean && tsc --build",
+    "publish": "npm run build && npm pack && npm publish --access public"
+  },
+  "prepublish": "tsc --build --clean && tsc --build",
+  "author": "Seth Uschuk",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "react": "18.3.1",
+    "typescript": "5.5.3"
+  }
+}
