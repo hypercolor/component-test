@@ -14,6 +14,8 @@
 This is a test package for detemining feasibility of injecting styled components via NPM
 
 ## Development/Deployment
+- the `copyfiles` package is required to build this package for publishing updates. Please install globally:
+  - `npm i -g copyfiles`
 - All components should be imported and exported from the `src/index.ts` file.
 - The `src/index.ts` file should be the entry point for the package.
 - After making changes, run `npm run build` to compile the TypeScript files into JavaScript.

@@ -1,6 +1,6 @@
 {
   "name": "@hypercolor/component-test",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "testing component injection via npm",
   "main": "dist/index.js",
   "files": [
@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --build --clean && tsc --build",
+    "clean": "rimraf dist/",
+    "copy": "copyfiles -u 1 lib/**/*.html lib/**/*.scss dist/",
+    "build": "npm run clean && tsc --build --clean && tsc --build && npm run copy",
     "publish": "npm run build && npm pack && npm publish --access public"
   },
   "prepublish": "tsc --build --clean && tsc --build",
