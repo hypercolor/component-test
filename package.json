@@ -14,6 +14,10 @@
   "prepublish": "tsc --build --clean && tsc --build",
   "author": "Seth Uschuk",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypercolor/component-test.git"
+  },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "react": "18.3.1",
